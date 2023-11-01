@@ -1,0 +1,40 @@
+/* Estilos para el encabezado */
+h1 {
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+}
+
+/* Estilos para el subtítulo */
+h2 {
+    font-size: 18px;
+    text-align: center;
+    color: #555;
+}
+
+/* Estilos para la tabla */
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+table, th, td {
+    border: 2px solid #000;
+}
+
+th {
+    background-color: #eee;
+    text-align: center;
+    font-weight: bold;
+}
+
+td {
+    text-align: center;
+}
+
+/* Estilos para los valores con porcentaje */
+td center {
+    font-weight: bold;
+    color: #0074D9;
+}

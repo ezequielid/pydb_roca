@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Resultados</title>
+</head>
+<body>
+    <h1>CIRCUITO a Presidente</h1>
+  
+    <table width="80%" border="2px">
+        <tr>
+            <th>JUNTOS POR EL CAMBIO</th>
+            <th>HACEMOS POR NUESTRO PAIS</th>
+            <th><b>UNION POR LA PATRIA</b></th>
+            <th>LA LIBERTAD AVANZA</th>
+            <th>FRENTE DE IZQUIERDA</th>
+            <th>BLANCOS</th>
+            <th>NULOS</th>
+            <th>CIRCUITOS</th>
+        </tr>
+        {% for h in data %}
+            <tr>
+                <td><center>{{ h.jxc_percent }}%</center></td>
+                <td><center>{{ h.hxnp_percent }}%</center></td>
+                <td><center>{{ h.uxp_percent }}%</center></td>
+                <td><center>{{ h.lla_percent }}%</center></td>
+                <td><center>{{ h.fdi_percent }}%</center></td>
+                <td><center>{{ h.bla_percent }}%</center></td>
+                <td><center>{{ h.nul_percent }}%</center></td>
+                <td><center>{{ h.circuito }}</center></td>
+
+            </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <br>
+    <table width="80%" border="2px">
+        <tr>
+            <th>JUNTOS POR EL CAMBIO</th>
+            <th>HACEMOS POR NUESTRO PAIS</th>
+            <th><b>UNION POR LA PATRIA</b></th>
+            <th>LA LIBERTAD AVANZA</th>
+            <th>FRENTE DE IZQUIERDA</th>
+            <th>BLANCOS</th>
+            <th>NULOS</th>
+            <th>CIRCUITOS</th>
+        </tr>
+        {% for h in data %}
+            <tr>
+                <td><center>{{ h.jxc1 }}</center></td>
+                <td><center>{{ h.hxnp1 }}</center></td>
+                <td><center>{{ h.uxp1 }}</center></td>
+                <td><center>{{ h.lla1 }}</center></td>
+                <td><center>{{ h.fdi1 }}</center></td>
+                <td><center>{{ h.bla1 }}</center></td>
+                <td><center>{{ h.nul1 }}</center></td>
+                <td><center>{{ h.circuito }}</center></td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
